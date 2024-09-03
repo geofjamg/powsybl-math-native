@@ -89,25 +89,25 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Download Linux library
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4.1.7
         with:
           name: libmath.so
           path: target/classes/natives/linux_64/
 
       - name: Download MacOS library
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4.1.7
         with:
           name: libmath.dylib
           path: target/classes/natives/osx_64/
 
       - name: Download MacOS ARM64 library
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4.1.7
         with:
           name: libmath_arm64.dylib
           path: target/classes/natives/osx_arm64/
 
       - name: Download Windows library
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4.1.7
         with:
           name: math.dll
           path: target/classes/natives/windows_64/
